@@ -1,0 +1,343 @@
+.booking {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
+
+.booking .booking_body {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 30px;
+}
+
+.booking .title {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.booking .air {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking .ticket_box {
+    width: 100%;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 30px;
+    background: var(--white);
+    box-shadow: 0px 1px 9.4px 0px rgba(222, 222, 222, 0.10), 0px 5px 20px 0px rgba(194, 194, 194, 0.09), 0px 10px 6px 0px rgba(221, 221, 224, 0.05), 0px 19px 7px 0px rgba(134, 134, 134, 0.01), 0px 29px 8px 0px rgba(0, 0, 0, 0.00);
+}
+
+.booking .air_contant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking .air_and_line {
+    display: flex;
+    align-items: center;
+}
+
+.booking .summa {
+    padding: 30px;
+    border-radius: 30px;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.booking .booking_box {
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    background: var(--white);
+}
+
+.booking .booking_box.data {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.booking .booking_box .btn {
+    height: 45px;
+}
+
+.booking .summa button {
+    margin-top: 30px;
+    width: 100%;
+    height: 45px;
+}
+
+.booking p {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.booking .ticket_box p,
+.booking .summa p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.booking .price {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+.booking input {
+    width: 100%;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--black);
+    background: var(--1, #F5F7FA);
+    font-size: 16px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.booking input::placeholder {
+    color: #9F9F9F;
+}
+
+.booking button {
+    width: 100%;
+    padding: 10px 30px;
+    background: var(--blue);
+    border-radius: 12px;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.booking .flex {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.booking .btns {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: var(--1, #F5F7FA);
+    border-radius: 10px;
+}
+
+.booking .btns button {
+    padding: 10px;
+    transition: .2s ease;
+}
+
+.booking .status {
+    width: 100%;
+    padding: 30px;
+    border-radius: 30px;
+    border: 2px solid #DBDBDB;
+    transition: .2s ease;
+}
+
+.booking .status.active {
+    border: 2px solid var(--blue);
+}
+
+.booking .status h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.booking .status p {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #141416;
+}
+
+.booking .status .price {
+    margin-top: 8px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.booking .navigate_block {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .booking .navigate_block {
+        display: grid;
+        grid-template-columns: 40px 1fr 40px;
+        margin-bottom: 20px;
+    }
+
+    .booking .navigate_title {
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--black);
+    }
+
+    .booking {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 150px;
+    }
+
+    .booking .booking_body {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .booking .title {
+        font-size: 16px;
+    }
+
+    .booking .air {
+        margin-top: 10px;
+    }
+
+    .booking .ticket_box {
+        gap: 15px;
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .booking .air_and_line .line {
+        width: 50px;
+    }
+
+    .booking .summa.none {
+        display: none;
+    }
+
+    .booking .fixet_block {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background: var(--white);
+        padding: 16px 0;
+    }
+
+    .booking .summa_block {
+        width: 90%;
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .booking .summa_block .title {
+        font-size: 14px;
+    }
+
+    .booking .summa_block_flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .booking .booking_box {
+        margin-top: 16px;
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .booking p {
+        margin-top: 2px;
+        font-size: 12px;
+    }
+
+    .booking .ticket_box p {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 300;
+        color: var(--gray);
+    }
+
+    .booking .summa_block p {
+        margin: 0;
+        font-size: 10px;
+        font-weight: 300;
+        color: var(--gray);
+    }
+
+    .booking .price {
+        margin-top: 0;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 18px;
+    }
+
+    .booking input {
+        font-size: 14px;
+    }
+
+    .booking button {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .booking .flex {
+        margin-top: 12px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .booking .status {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .booking .status img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .booking .status h3 {
+        font-size: 16px;
+    }
+
+    .booking .status p {
+        font-size: 14px;
+    }
+
+    .booking .status .price {
+        font-size: 16px;
+    }
+}

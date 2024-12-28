@@ -1,0 +1,21 @@
+.privacy-policy {
+    background-color: #fff;
+    padding: 40px 0 0 0;
+}
+
+.deep-links {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.deep-links a {
+    display: block;
+    padding: 12px 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    color: #004ed0;
+    font-size: 16px;
+    font-weight: normal;
+    /* white-space: nowrap; */
+}

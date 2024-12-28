@@ -1,0 +1,348 @@
+.profile {
+    width: 100%;
+    padding-bottom: 250px;
+}
+
+.profile .title {
+    margin-top: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.profile .profile_head {
+    margin-top: 40px;
+    display: flex;
+    /* gap: 40px; */
+}
+
+.profile .profile_page {
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black);
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #cdcdcd;
+    transition: .2s ease;
+}
+
+.profile .profile_page.active {
+    border-bottom: 2px solid var(--blue);
+}
+
+.profile .not_data {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile .not_data img {
+    width: 112px;
+}
+
+.profile .not_data .not_data_title {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.profile .not_data .not_data_text {
+    margin-top: 7px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #575757;
+}
+
+.profile .ticket_profile {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile .bilet {
+    width: 60%;
+    padding: 30px;
+    border-radius: 30px;
+    background: var(--white);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 70px;
+    cursor: pointer;
+}
+
+.profile .flex_box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile .flex_title {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.profile .flex_code {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.profile .date {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.profile .bilet p {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.profile .border {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-left: 1px solid var(--3, #DBDBDB);
+}
+
+.profile .status {
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.profile .circle.green {
+    background: #14DD0F;
+}
+
+.profile .circle.gray {
+    background: #9F9F9F;
+}
+
+.profile .circle.red {
+    background: #F22B37;
+}
+
+.profile .status.green {
+    color: #14DD0F;
+}
+
+.profile .status.gray {
+    color: #9F9F9F;
+}
+
+.profile .status.red {
+    color: #F22B37;
+}
+
+.profile .data {
+    margin-top: 40px;
+    width: 60%;
+    padding: 30px;
+    border-radius: 30px;
+    background: var(--white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.profile .red_text,
+.profile .blue_text {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: var(--blue);
+    margin-left: auto;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.profile .red_text {
+    color: #F22B37;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.profile .preview {
+    position: relative;
+}
+
+.profile .absolute {
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.profile .input_form.disabled {
+    cursor: not-allowed;
+    color: #9F9F9F;
+    background: var(--2, #E8E8E8);
+}
+
+.profile .form_password {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.profile .modal_title.a {
+    margin: 0;
+}
+
+.profile .block {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .profile {
+        padding-bottom: 150px;
+    }
+
+    .profile .title {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .profile .profile_head {
+        margin-top: 10px;
+    }
+
+    .profile .profile_page {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .profile .not_data {
+        margin: 130px 0;
+    }
+
+    .profile .not_data img {
+        width: 80px;
+    }
+
+    .profile .not_data .not_data_title {
+        font-size: 16px;
+    }
+
+    .profile .not_data .not_data_text {
+        font-size: 14px;
+    }
+
+    .profile .ticket_profile {
+        gap: 16px;
+    }
+
+    .profile .bilet {
+        width: 100%;
+        padding: 16px;
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .profile .border_block {
+        border-top: 1px solid var(--3, #DBDBDB);
+        padding-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .profile .border_block img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile .flex_title {
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile .flex_code {
+        font-size: 12px;
+    }
+
+    .profile .date {
+        font-size: 16px;
+    }
+
+    .profile .bilet p {
+        font-size: 12px;
+    }
+
+    .profile .data {
+        margin-top: 20px;
+        width: 100%;
+        padding: 16px;
+        border-radius: 24px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .profile .blue_text,
+    .profile .preview {
+        display: none;
+    }
+
+    .profile .block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .profile .blue_text.password {
+        display: block;
+        margin: 0;
+    }
+
+    .profile .block .preview {
+        display: block;
+    }
+
+    /* .profile .red_text */
+    .profile .block .blue_text {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        color: var(--blue);
+        margin-left: auto;
+        cursor: pointer;
+        padding: 10px 20px;
+    }
+
+    .profile .red_text {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .profile .none {
+        display: none;
+    }
+}

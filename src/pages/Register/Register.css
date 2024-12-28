@@ -1,0 +1,19 @@
+.register .login_form {
+    max-width: 800px;
+    width: 100%;
+}
+
+.register .register_grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:650px) {
+    .register .register_grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

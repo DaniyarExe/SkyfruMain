@@ -1,0 +1,138 @@
+.news_compony {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.news_compony .contant {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.news_compony .news_compony_block {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 20px;
+  border-radius: 30px;
+  padding: 25px;
+  background: var(--grayW);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.news_compony .news_compony_block .image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.news_compony .news_compony_block .title {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.news_compony .news_compony_block p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #575757;
+  width: 100%;
+  height: 64px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+.news_compony .news_compony_block .date {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.news_compony .news_compony_block .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.news_compony .current_head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.news_compony .direct {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news_compony .direct {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  width: 400px;
+  text-decoration: none;
+  color: var(--gray);
+  cursor: pointer;
+}
+
+.news_compony .arrow-news {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .news_compony {
+    margin-top: 50px;
+  }
+
+  .news_compony .direct {
+    font-size: 15px;
+  }
+
+  .news_compony .contant {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .news_compony .news_compony_block {
+    margin: 0;
+    padding: 16px;
+    height: 100%;
+  }
+
+  .news_compony .news_compony_block .image {
+    height: 160px;
+  }
+
+  .news_compony .news_compony_block .title {
+    font-size: 16px;
+  }
+
+  .news_compony .news_compony_block p {
+    font-size: 14px;
+  }
+
+  .news_compony .flex img {
+    width: 30px;
+    height: 30px;
+  }
+  .news_compony .arrow-news {
+    display: block;
+  }
+  .news_compony .disabled-none {
+    display: none;
+  }
+}

@@ -1,0 +1,123 @@
+@font-face {
+  font-family: Gilroy;
+  src: url("../src/fonts/Gilroy-Black.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../src/fonts/Gilroy-UltraLight.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../src/fonts/Gilroy-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../src/fonts/Gilroy-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../src/fonts/Gilroy-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../src/fonts/Gilroy-Semibold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../src/fonts/Gilroy-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url("../src/fonts/Gilroy-Extrabold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../src/fonts/Rubik-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../src/fonts/Rubik-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../src/fonts/Rubik-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../src/fonts/Rubik-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../src/fonts/Rubik-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url("../src/fonts/Rubik-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik, Gilroy, sans-serif;
+}
+
+body {
+  background: var(--grayW);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+  background: transparent;
+}
+
+:root {
+  --grayW: #f4f4f4;
+  --gray: #9f9f9f;
+  --gblue: #00adee;
+  --blue: #004ed0;
+  --black: #141416;
+  --white: #fdfdfd;
+  --orange: #ff6600;
+}
+
+.min-height-80vh {
+  min-height: 80vh;
+}
+
+.min-height-60vh {
+  min-height: 60vh;
+}
+
+.min-height-40vh {
+  min-height: 40vh;
+}

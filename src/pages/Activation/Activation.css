@@ -1,0 +1,23 @@
+.activation p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.activation .re_send {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--blue);
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .activation p {
+        font-size: 14px;
+    }
+}

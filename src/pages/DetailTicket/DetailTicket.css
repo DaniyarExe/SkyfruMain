@@ -1,0 +1,347 @@
+.detail_ticket {
+    padding-top: 40px;
+    width: 100%;
+    padding-bottom: 250px;
+}
+
+.detail_ticket .back {
+    cursor: pointer;
+}
+
+.detail_ticket .nav {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 100px;
+}
+
+.detail_ticket .wrapper {
+    margin-top: 20px;
+}
+
+.detail_ticket .contant_text {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--black);
+}
+
+.detail_ticket .text {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #575757;
+}
+
+.detail_ticket .ticket_box {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 15px;
+    padding: 30px;
+    border-radius: 30px;
+    background: var(--white);
+    box-shadow: 0px 1px 9.4px 0px rgba(222, 222, 222, 0.10), 0px 5px 20px 0px rgba(194, 194, 194, 0.09), 0px 10px 6px 0px rgba(221, 221, 224, 0.05), 0px 19px 7px 0px rgba(134, 134, 134, 0.01), 0px 29px 8px 0px rgba(0, 0, 0, 0.00);
+}
+
+.detail_ticket .box {
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 30px;
+    background: var(--white);
+    box-shadow: 0px 1px 9.4px 0px rgba(222, 222, 222, 0.10), 0px 5px 20px 0px rgba(194, 194, 194, 0.09), 0px 10px 6px 0px rgba(221, 221, 224, 0.05), 0px 19px 7px 0px rgba(134, 134, 134, 0.01), 0px 29px 8px 0px rgba(0, 0, 0, 0.00);
+}
+
+.detail_ticket .box_title {
+    font-size: 20px;
+    font-weight: 300;
+    color: #575757;
+}
+
+.detail_ticket .box_text {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+
+.detail_ticket .contant {
+    width: 60%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail_ticket .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.detail_ticket .air {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail_ticket .air_contant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail_ticket .air_and_line {
+    display: flex;
+    align-items: center;
+}
+
+.detail_ticket .summa {
+    border-left: 1px solid var(--3, #DBDBDB);
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail_ticket .summa button {
+    margin-top: 30px;
+    width: 100%;
+    height: 45px;
+}
+
+.detail_ticket .summa .btn {
+    height: 30px;
+}
+
+.detail_ticket .ticket_box .title {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.detail_ticket .ticket_box p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.detail_ticket .ticket_box .price {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--blue);
+}
+
+.detail_ticket .title {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.detail_ticket .block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.detail_ticket .code {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+
+.detail_ticket .btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail_ticket .btn {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    color: var(--white);
+    width: 100%;
+    padding: 10px;
+    background: var(--blue);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.detail_ticket .status {
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.detail_ticket .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.detail_ticket .circle.green {
+    background: #14DD0F;
+}
+
+.detail_ticket .circle.gray {
+    background: #9F9F9F;
+}
+
+.detail_ticket .circle.red {
+    background: #F22B37;
+}
+
+.detail_ticket .status.green {
+    color: #14DD0F;
+}
+
+.detail_ticket .status.gray {
+    color: #9F9F9F;
+}
+
+.detail_ticket .status.red {
+    color: #F22B37;
+}
+
+.detail_ticket .summa_block {
+    display: none;
+}
+
+.detail_ticket .status.status_block {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .detail_ticket {
+        padding-top: 20px;
+        padding-bottom: 150px;
+    }
+
+    .detail_ticket .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .detail_ticket .wrapper {
+        margin-top: 20px;
+    }
+
+    .detail_ticket .contant_text {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .detail_ticket .ticket_box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 16px;
+        border-radius: 20px;
+    }
+
+    .detail_ticket .box {
+        padding: 16px;
+        border-radius: 20px;
+    }
+
+    .detail_ticket .box_title {
+        font-size: 16px;
+    }
+
+    .detail_ticket .box_text {
+        font-size: 14px;
+    }
+
+    .detail_ticket .flex {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .detail_ticket .air_and_line .line {
+        width: 50px;
+    }
+
+    .detail_ticket .summa.none {
+        display: none;
+    }
+
+    .detail_ticket .summa_block {
+        padding: 0;
+        padding-top: 14px;
+        border: none;
+        border-top: 1px solid var(--3, #DBDBDB);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .detail_ticket .ticket_box .title {
+        font-size: 16px;
+    }
+
+    .detail_ticket .ticket_box p {
+        font-size: 10px;
+    }
+
+    .detail_ticket .ticket_box .price {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 18px;
+    }
+
+    .detail_ticket .title {
+        font-size: 18px;
+    }
+
+    .detail_ticket .code {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    .detail_ticket .btns.none {
+        display: none;
+    }
+
+    .detail_ticket .status.none {
+        display: none;
+    }
+
+    .detail_ticket .filter {
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .detail_ticket .filter div {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: var(--black);
+    }
+
+    .detail_ticket .circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+
+    .detail_ticket .status.status_block {
+        display: flex;
+        align-items: center;
+    }
+}

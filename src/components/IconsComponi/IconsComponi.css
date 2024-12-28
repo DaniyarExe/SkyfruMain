@@ -1,0 +1,32 @@
+.icons_componi {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.icons_componi .slide_image {
+  padding: 15px;
+}
+
+.icons_componi .slide_image img {
+  margin: 0 auto;
+  width: 80%;
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.slick-prev:before {
+  font-size: 24px;
+  color: var(--gray);
+}
+
+.slick-next:before {
+  font-size: 24px;
+  color: var(--gray);
+}
+
+@media (max-width: 600px) {
+  .icons_componi {
+    margin-top: 50px;
+  }
+}

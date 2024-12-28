@@ -1,0 +1,126 @@
+.all_news {
+  width: 100%;
+  background: white;
+  padding-bottom: 200px;
+}
+
+.all_news .contant {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.all_news .all_news_block {
+  margin-top: 50px;
+  width: 100%;
+  min-height: 20px;
+  border-radius: 30px;
+  padding: 25px;
+  background: var(--grayW);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.all_news .all_news_block .image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.all_news .all_news_block .title {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.all_news .all_news_block p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #575757;
+  width: 100%;
+  height: 64px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+.all_news .all_news_block .date {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.all_news .all_news_block .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.all_news .current_head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.all_news .direct {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.all_news .direct {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  width: 400px;
+  text-decoration: none;
+  color: var(--gray);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .all_news {
+    margin-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .all_news .contant {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .all_news .all_news_block {
+    margin: 0;
+    padding: 16px;
+    height: 100%;
+  }
+
+  .all_news .all_news_block .image {
+    height: 160px;
+  }
+
+  .all_news .all_news_block .title {
+    font-size: 16px;
+  }
+
+  .all_news .all_news_block p {
+    font-size: 14px;
+  }
+
+  .all_news .flex img {
+    width: 30px;
+    height: 30px;
+  }
+}

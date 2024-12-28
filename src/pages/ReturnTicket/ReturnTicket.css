@@ -1,0 +1,55 @@
+.return_ticket {
+  width: 100%;
+}
+
+.return_ticket .login_form {
+  max-width: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.return_ticket .medium {
+  font-weight: 500;
+}
+
+.return_ticket .register_grid {
+  margin-top: 50px;
+}
+
+.return_ticket .input_form.error {
+  border: 1px solid red;
+}
+
+.return_ticket .input_form::placeholder {
+  font-size: 14px;
+}
+
+.return_ticket .register_grid .input_box {
+  height: 100%;
+  margin-bottom: 16px;
+}
+
+.return_ticket small {
+  color: gray;
+}
+
+.return_ticket .passport_image {
+  margin-top: 8px;
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .return_ticket .login_form {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-shadow: 0 1px 8px rgba(10, 10, 15, 0.15) !important;
+    border-radius: 10px !important;
+  }
+}

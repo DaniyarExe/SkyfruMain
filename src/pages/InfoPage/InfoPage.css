@@ -1,0 +1,124 @@
+.info_page {
+    width: 100%;
+    background: var(--white);
+    padding-bottom: 250px;
+}
+
+.info_page .image {
+    width: 100%;
+    height: 400px;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info_page .contant {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 100px;
+}
+
+.info_page .drop {
+    animation: drop .3s ease;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.info_page .drop_trip {
+    width: 100%;
+    height: 60px;
+    padding: 0 24px;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black);
+    border-radius: 24px;
+    border: 1px solid var(--3, #DBDBDB);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.info_page .drop_contant {
+    width: 100%;
+    height: 60px;
+    padding: 0 24px;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    background: var(--grayW);
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.info_page h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+.info_page p {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .info_page {
+        padding-bottom: 150px;
+    }
+
+    .info_page .image {
+        margin-top: 24px;
+        height: 160px;
+    }
+
+    .info_page .contant {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .info_page h2 {
+        font-size: 16px;
+    }
+
+    .info_page p {
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
+    .info_page .drop_trip {
+        padding: 16px;
+        border-radius: 14px;
+        font-size: 16px;
+    }
+
+    .info_page .drop_contant {
+        padding: 16px;
+        border-radius: 14px;
+        font-size: 14px;
+    }
+
+    .info_page .drop_contant img {
+        width: 30px;
+        height: 30px;
+    }
+}
