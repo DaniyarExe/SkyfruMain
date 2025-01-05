@@ -391,6 +391,9 @@
 }
 
 @media (max-width: 600px) {
+  .d-flex {
+    padding: 10px 20px;
+  }
   .header {
     height: 70px;
   }
@@ -501,6 +504,7 @@
   height: 24px;
   border-radius: 5px;
 }
+
 
 @media (max-width: 500px) {
   .header_fixet .active-lang {

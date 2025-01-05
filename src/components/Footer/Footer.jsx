@@ -83,11 +83,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="container footer-flex">
-          <p className="all">{t("fotr2")} &copy; 2024</p>
-          <p className="all">
-            Made with ✈️ by
-            <a
-              href="https://t.me/navisdevs"
+          <p className="all">{t("fotr2")}</p>
+          <p className="all">Made with ✈️ by <a href="https://t.me/navisdevs"
               target="_blank"
               className="navis-dev"
             >

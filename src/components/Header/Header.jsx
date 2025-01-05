@@ -311,7 +311,6 @@ const Header = ({ local }) => {
                     </div>
                   )}
                 </div>
-
                 <a
                   href="https://booking.skyfru.kg/registration/"
                   className="register"
@@ -329,7 +328,7 @@ const Header = ({ local }) => {
               <div></div>
               <div></div>
             </div>
-            <NavLink to="/" className="title_burger">
+            <NavLink to="/" className="title_burger">     
               <img className="logo_image_menu" src={logo} alt="" />
             </NavLink>
           </div>

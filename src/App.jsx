@@ -14,6 +14,7 @@ import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import Footer from "./components/Footer/Footer";
 import Contact from "./pages/Contact/Contact";
 import Login from "./pages/Login/Login";
+import SecurityData from "./pages/SecurityData/SecurityData";
 import Register from "./pages/Register/Register";
 import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 import Activation from "./pages/Activation/Activation";
@@ -75,7 +76,11 @@ function App() {
           <Route path="/:lang/about" element={<About />} />
           <Route path="/:lang/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="about/:partner" element={<About />} />
-          <Route path="login" element={<Login setLoginModal={setLoginModal} />} />
+          <Route
+            path="login"
+            element={<Login setLoginModal={setLoginModal} />}
+          />
+          <Route path="/:lang/info-page/security" element={<SecurityData />} /> 
           <Route path="register" element={<Register />} />
           <Route
             path="activation"
@@ -113,7 +118,10 @@ function App() {
               />
             }
           />
-          <Route path="/:lang/detail-ticket/:ticket" element={<DetailTicket />} />
+          <Route
+            path="/:lang/detail-ticket/:ticket"
+            element={<DetailTicket />}
+          />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />

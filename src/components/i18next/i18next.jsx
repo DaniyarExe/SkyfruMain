@@ -1,4 +1,5 @@
 import i18n from "i18next";
+import { Send } from "lucide-react";
 import { initReactI18next } from "react-i18next";
 
 const savedLang = localStorage.getItem("lang") || "ru";
@@ -48,27 +49,28 @@ i18n.use(initReactI18next).init({
         passenger5: "12 жашка чейин",
         passenger6: "Ымыркайлар",
         passenger7: "5 жашка чейин (орунсуз)",
-
         no: "Жок",
-
         register: "Каттоо",
-
         fotr: " Бишкек ш, Шевченко 96",
         fotr1: "Иш убактысы: 9:00дөн 18:00гө чейин",
         fotr2: "Бардык укуктар корголгон © 2024",
         fotr3: "Кыргыз Республикасы",
 
         declarationMain: "Авиабилет үчүн акча каражаттарын кайтарууга арыз",
-        declarationInfo: "Кайтарууга арыздар кезек тартибинде жана компаниянын иш убактысында гана иштелип чыгат: Дүйшөмбү-Жума саат 10:00-17:00. Иштеп чыгуу 3 жумуш күнгө чейин созулушу мүмкүн, арыздарды жөнөтүүдө муну эске алууңузду суранабыз.",
-        declarationSideInfo: "Арыз ар бир жүргүнчү тарабынан өзүнчө же төлөм жүргүзүлгөн карта ээси тарабынан толтурулат (бул учурда карта ээси бир нече жүргүнчүнү тизмелей алат).",
+        declarationInfo:
+          "Кайтарууга арыздар кезек тартибинде жана компаниянын иш убактысында гана иштелип чыгат: Дүйшөмбү-Жума саат 10:00-17:00. Иштеп чыгуу 3 жумуш күнгө чейин созулушу мүмкүн, арыздарды жөнөтүүдө муну эске алууңузду суранабыз.",
+        declarationSideInfo:
+          "Арыз ар бир жүргүнчү тарабынан өзүнчө же төлөм жүргүзүлгөн карта ээси тарабынан толтурулат (бул учурда карта ээси бир нече жүргүнчүнү тизмелей алат).",
 
         declarationName: "Мен",
-        declarationNameInfo: "жүргүнчүнүн же төлөм жүргүзүлгөн картанын ээсинин фамилиясы, аты, атасынын аты",
+        declarationNameInfo:
+          "жүргүнчүнүн же төлөм жүргүзүлгөн картанын ээсинин фамилиясы, аты, атасынын аты",
         declarationPassport: "Пасспорт",
-        declarationPassportInfo:"ички паспорт (сериясы, номери)",
+        declarationPassportInfo: "ички паспорт (сериясы, номери)",
         declarationIssued: "Берилген",
         declarationIssuedInfo: "качан, ким тарабынан",
-        declarationDeal: "Аба ташуу келишимин бузууну жана аны бузууга байланыштуу акча каражаттарын кайтарып берүүнү суранам. Арыз жөнөтүлгөн күнү мен кайтарып берүүгө болжолдуу сумма менен таанышканымды ырастайм жана орундардан баш тартууну мен тараптан кошумча тастыктоосуз жүргүзүүнү суранам. Эсептөөдө мага айтылган авиакомпания жана Агенттик тарабынан белгиленген кайтаруу үчүн жыйымдарды кайтарылууга тийиш болгон акча каражаттарынын суммасынан кармап калууну өтүнөм.",
+        declarationDeal:
+          "Аба ташуу келишимин бузууну жана аны бузууга байланыштуу акча каражаттарын кайтарып берүүнү суранам. Арыз жөнөтүлгөн күнү мен кайтарып берүүгө болжолдуу сумма менен таанышканымды ырастайм жана орундардан баш тартууну мен тараптан кошумча тастыктоосуз жүргүзүүнү суранам. Эсептөөдө мага айтылган авиакомпания жана Агенттик тарабынан белгиленген кайтаруу үчүн жыйымдарды кайтарылууга тийиш болгон акча каражаттарынын суммасынан кармап калууну өтүнөм.",
 
         Order: "Заказдын деталдары:",
         OrderInfo: "БРОН маалыматтары:",
@@ -83,10 +85,25 @@ i18n.use(initReactI18next).init({
         OrderComments: "Сиздин комментарийлер:",
         OrderPassportFront: "Паспорттун сүрөтү (алдыңкы бети)",
         OrderPassportBack: "Паспорттун сүрөтү (арткы бети)",
-
         Office: "Офис",
-        SendBtn: "Жиберүү"
-
+        SendBtn: "Жиберүү",
+        zapolnite: "Эгер коркунучту аныктаган болсоңуз, толтуруңуз!",
+        warning: 'Көңүл бургула! Учуулардын жана авиациялык коопсуздуктун алкагындагы ар кандай окуялар боюнча маалыматтарды ыктыярдуу берүү системасы жазаны колдонуу жана маалымат булактарын коргоону камсыз кылат. Ыктыярдуу билдирүү боюнча жаза колдонуудан баш тартуу болуп саналат Skyfru компаниясынын ыктыярдуу инциденттер жана коркунучтар жөнүндө отчеттуулук системасынын негизги принциби',
+        revealed: 'КАПФИДЕНЦИАЛ! (Белгиленген болсо, Юридикалык маалыматтар ачыкка чыгарылбайт)',
+        liaisons: 'Сиз менен байланышсак болобу? (пикир үчүн жок дегенде электрондук кат калтыруу сунушталат)',
+        disclosed: 'Мен байланышкым келбейт?', 
+        UserName: 'Фамилиясы, аты',
+        Email: 'Электрондук кат',
+        Phone: 'Телефон номери',
+        Data: 'Маалыматтын күнү',
+        Address: 'Жайгашкан жер',
+        opis: 'Маалымат:',
+        Suggestions: 'Түзөтүүчү иш-аракеттер боюнча сунуштар:',
+        your: 'Сиздин оюңузча, мындай окуянын кайталануу ыктымалдыгы кандай?',
+        unlikely: '1 - күмөн, 5 - көп.',
+        reckon: 'Эгер окуя кайра кайталана турган болсо, эң жаман кесепеттер кандай болушу мүмкүн деп ойлойсуз?',
+        catastrophic: 'А - катастрофалык, E - кичине.',
+        Send: 'Жиберүү',
       },
     },
     ru: {
@@ -143,16 +160,20 @@ i18n.use(initReactI18next).init({
         fotr3: "Кыргызская Республика г.",
 
         declarationMain: "Заявление на возврат денежных средств за авиабилет",
-        declarationInfo: "Заявления на возврат обрабатываются в порядке очереди и только в рабочие часы компании: пн-пт 10:00-17:00, сб-вс 10:00-17:00. Обработка может занять до 3 рабочих дней, просим Вас учитывать это при отправлении заявлений.",
-        declarationSideInfo: "Заявление заполняется каждым пассажиром отдельно либо владельцем карты, с которой производилась оплата (в этом случае владелец карты может перечислить несколько пассажиров).",
+        declarationInfo:
+          "Заявления на возврат обрабатываются в порядке очереди и только в рабочие часы компании: пн-пт 10:00-17:00, сб-вс 10:00-17:00. Обработка может занять до 3 рабочих дней, просим Вас учитывать это при отправлении заявлений.",
+        declarationSideInfo:
+          "Заявление заполняется каждым пассажиром отдельно либо владельцем карты, с которой производилась оплата (в этом случае владелец карты может перечислить несколько пассажиров).",
 
         declarationName: "Я",
-        declarationNameInfo: "фамилия, имя, отчество пассажира или владельца карты, с которой производилась оплата",
+        declarationNameInfo:
+          "фамилия, имя, отчество пассажира или владельца карты, с которой производилась оплата",
         declarationPassport: "Пасспорт",
-        declarationPassportInfo:"внутренний (серия, номер)",
+        declarationPassportInfo: "внутренний (серия, номер)",
         declarationIssued: "Выдан",
         declarationIssuedInfo: "когда, кем",
-        declarationDeal: "Прошу расторгнуть договор воздушной перевозки и вернуть денежные средства в связи с его расторжением. Подтверждаю, что я ознакомлен в день отправки заявления с примерной суммой к возврату и прошу произвести отказ от мест без дополнительного подтверждения с моей стороны. Прошу удержать установленные авиакомпанией и сборы за возврат, озвученные мне при расчете, из суммы денежных средств, подлежащей возврату.",
+        declarationDeal:
+          "Прошу расторгнуть договор воздушной перевозки и вернуть денежные средства в связи с его расторжением. Подтверждаю, что я ознакомлен в день отправки заявления с примерной суммой к возврату и прошу произвести отказ от мест без дополнительного подтверждения с моей стороны. Прошу удержать установленные авиакомпанией и сборы за возврат, озвученные мне при расчете, из суммы денежных средств, подлежащей возврату.",
 
         Order: "Детали заказа:",
         OrderInfo: "Данные БРОН:",
@@ -161,7 +182,8 @@ i18n.use(initReactI18next).init({
         OrderDeparture: "Дата вылета",
         OrderDate: "дд, мм, гггг",
         OrderPassagerName: "ФИО пассажиров",
-        OrderPayment: "<strong>Обращаем ваше внимание,</strong> что деньги будут возвращены тем же способом, каким была произведена оплата: <strong>банковской картой на ту же банковскую карту.</strong>",
+        OrderPayment:
+          "<strong>Обращаем ваше внимание,</strong> что деньги будут возвращены тем же способом, каким была произведена оплата: <strong>банковской картой на ту же банковскую карту.</strong>",
         OrderPhone: "Контактный телефон:",
         OrderDataInfo: "Дата",
         OrderComments: "Ваши комментарии:",
@@ -169,7 +191,24 @@ i18n.use(initReactI18next).init({
         OrderPassportBack: "Фото паспорта (задняя сторона)",
 
         Office: "Офис",
-        SendBtn: "Отправить"
+        SendBtn: "Отправить",
+        zapolnite: "Если вы определили опасность, заполните ее!",
+        warning: 'Обращать внимание! Система добровольного сообщения информации о различных происшествиях в сфере полетов и авиационной безопасности обеспечивает применение штрафных санкций и защиту источников информации. Отсутствие санкций за добровольное информирование является ключевым принципом системы добровольного сообщения об инцидентах и ​​угрозах Skyfru.',
+        revealed: 'КОНФИДЕНЦИАЛЬНО! (Если этот флажок установлен, юридическая информация не будет раскрыта)',
+        liaisons: 'Можем ли мы связаться с вами? (рекомендуется оставить как минимум email для обратной связи)',
+        disclosed: 'Я не хочу быть связанным',
+        UserName: 'Фамилия, имя',
+        Email: 'Электронная почта',
+        Phone: 'Tелефон',
+        Data: 'Дата события',
+        Address: 'Местоположение',
+        opis: 'Описание:',
+        Suggestions: 'Предложения корректирующих действий:',
+        your: 'По вашему мнению, какова вероятность повторения подобного события?',
+        unlikely: '1 - маловероятно, 5 - часто.',
+        reckon: 'Как вы считаете, какие наихудшие последствия возможны в случае повторения события?',
+        catastrophic: 'A - катастрофические, E - незначительные.',
+        Send: 'Отправить',
       },
     },
     en: {
@@ -226,16 +265,20 @@ i18n.use(initReactI18next).init({
         fotr3: "Kyrgyz Republic c.",
 
         declarationMain: "Application for refund for the ticket",
-        declarationInfo: "Refund applications are processed on a first-come, first-served basis and only during the company's working hours: Mon-Fri 10:00-17:00. Processing may take up to 3 business days, please take this into account when sending applications.",
-        declarationSideInfo: "The application is filled out by each passenger separately or by the owner of the card from which the payment was made (in this case, the cardholder can list several passengers).",
+        declarationInfo:
+          "Refund applications are processed on a first-come, first-served basis and only during the company's working hours: Mon-Fri 10:00-17:00. Processing may take up to 3 business days, please take this into account when sending applications.",
+        declarationSideInfo:
+          "The application is filled out by each passenger separately or by the owner of the card from which the payment was made (in this case, the cardholder can list several passengers).",
 
         declarationName: "I am ",
-        declarationNameInfo: "the last name, first name, fathers name of the passenger or the cardholder with whom the payment was made",
+        declarationNameInfo:
+          "the last name, first name, fathers name of the passenger or the cardholder with whom the payment was made",
         declarationPassport: "Passport",
         declarationPassportInfo: "internal passport (series, number)",
         declarationIssued: "Issued",
         declarationIssuedInfo: "when, by whom",
-        declarationDeal: "I ask you to terminate the air transportation contract and return the funds in connection with its termination. I confirm that I have read the approximate amount to be refunded on the day of sending the application and ask you to cancel the seats without additional confirmation from my side. I ask you to deduct the refund fees set by the airline and the agency, announced to me during the calculation, from the amount of money to be refunded.",
+        declarationDeal:
+          "I ask you to terminate the air transportation contract and return the funds in connection with its termination. I confirm that I have read the approximate amount to be refunded on the day of sending the application and ask you to cancel the seats without additional confirmation from my side. I ask you to deduct the refund fees set by the airline and the agency, announced to me during the calculation, from the amount of money to be refunded.",
 
         Order: "Order Details:",
         OrderInfo: "BRON Data:",
@@ -244,16 +287,32 @@ i18n.use(initReactI18next).init({
         OrderDeparture: "Departure date",
         OrderDate: "dd.mm.yyyy",
         OrderPassagerName: "Full name of passengers",
-        OrderPayment: "<strong>Please note</strong> that the money will be refunded in the same way as the payment was made: <strong>by bank card to the same bank card.<strong/>",
+        OrderPayment:
+          "<strong>Please note</strong> that the money will be refunded in the same way as the payment was made: <strong>by bank card to the same bank card.<strong/>",
         OrderPhone: "Contact phone number:",
         OrderDataInfo: "Date",
         OrderComments: "Your comments:",
         OrderPassportFront: "Passport photo (front side)",
         OrderPassportBack: "Passport photo (reverse side)",
-
         Office: "Office",
-        SendBtn: "Send"
-
+        SendBtn: "Send",
+        zapolnite: "Fill in if you have identified a hazard!",
+        warning:'Warning. The system of voluntary reporting of any events within the framework of flight safety and aviation security is not oriented towards the application of punishment and provides for the protection of sources of information.The system of voluntary reporting of any event within the framework of flight safety and aviation security is not oriented towards penalties and provides for protection of sources of information. Non-penalization of voluntary reporting is a fundamental principle of the voluntary reporting system.The Skyfru Company s voluntary incident and hazard reporting system is a fundamental principle.Translated with DeepL.com (free version)',
+        revealed: 'CONFIDENTIAL! (If marked, your details will not be disclosed)',
+        liaisons: 'Can we contact you? (it is recommended to leave at least an email for feedback)',
+        disclosed: 'I don t want to be contacted',
+        UserName: 'Surname, first name',
+        Email: 'Email',
+        Phone: 'Phone number',
+        Data: 'Event date',
+        Address: 'Location',
+        opis: 'Description:',
+        Suggestions: 'Suggestions for Corrective Actions:', 
+        your: 'In your opinion, what is the likelihood of such an event happening again?',
+        unlikely: '1 - unlikely, 5 - frequent.',
+        reckon: 'What do you think are the worst possible consequences if the event were to happen again?',
+        catastrophic: 'A - catastrophic, E - minor.',
+        Send: 'Send',
       },
     },
   },

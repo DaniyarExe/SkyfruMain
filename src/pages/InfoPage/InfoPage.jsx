@@ -74,7 +74,6 @@ const InfoPage = () => {
         console.log(error);
       });
   }, [lang]);
-
   return (
     <div className="info_page">
       {info === "dog"}
