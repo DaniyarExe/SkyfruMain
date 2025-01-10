@@ -141,7 +141,9 @@ const SecurityData = () => {
 
               <span
                 className={`slider ${isEnabled ? "slider-on" : "slider-off"}`}
-              ></span>
+              >
+                
+              </span>
             </label>
             <h5>{t("revealed")}</h5>
           </div>
